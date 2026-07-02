@@ -1,0 +1,45 @@
+{
+  "name": "Nstup Editorial",
+  "description": "Palette éditoriale chaude et sophistiquée",
+  "ambiance": "Éditorial / Luxe",
+  "mode": {
+    "light": {
+      "bg": "#f8f7f4",
+      "bg-secondary": "#efede8",
+      "text": "#1a1a1a",
+      "text-secondary": "#7a7670",
+      "accent": "#8b7355",
+      "border": "#e0ddd5"
+    },
+    "dark": {
+      "bg": "#121212",
+      "bg-secondary": "#1e1e1e",
+      "text": "#e8e6e3",
+      "text-secondary": "#a09e9a",
+      "accent": "#c9a84c",
+      "border": "#2a2a2a"
+    }
+  },
+  "oklch": {
+    "light": {
+      "bg": "oklch(0.97 0.008 80)",
+      "text": "oklch(0.15 0.01 80)",
+      "accent": "oklch(0.55 0.12 75)"
+    },
+    "dark": {
+      "bg": "oklch(0.08 0.005 80)",
+      "text": "oklch(0.92 0.005 80)",
+      "accent": "oklch(0.72 0.14 85)"
+    }
+  },
+  "contrast": {
+    "text-on-bg": "10.1:1",
+    "text-secondary-on-bg": "5.8:1",
+    "accent-on-bg": "4.8:1"
+  },
+  "tokens": {
+    "--color-bg": "var(--color-bg-light)",
+    "--color-text": "var(--color-text-light)",
+    "--color-accent": "var(--color-accent-light)"
+  }
+}

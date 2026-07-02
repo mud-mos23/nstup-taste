@@ -17,6 +17,7 @@ declare -A SKILLS=(
   [imagegen-web]="skills/imagegen-web/SKILL.md"
   [imagegen-mobile]="skills/imagegen-mobile/SKILL.md"
   [brandkit]="skills/brandkit/SKILL.md"
+  [stitch]="skills/stitch/SKILL.md"
 )
 
 if [[ $# -eq 0 ]]; then

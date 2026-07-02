@@ -1,0 +1,68 @@
+name: Validate Nstup Skills
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'skills/**/*.md'
+      - 'skill.sh'
+  pull_request:
+    branches: [main]
+    paths:
+      - 'skills/**/*.md'
+      - 'skill.sh'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Validate SKILL.md frontmatter
+        run: |
+          errors=0
+          for f in skills/*/SKILL.md; do
+            dir=$(basename $(dirname "$f"))
+            if ! head -1 "$f" | grep -q '^---$'; then
+              echo "❌ $dir/SKILL.md: missing opening ---"
+              errors=$((errors+1))
+            fi
+            if ! grep -q '^name: ' "$f"; then
+              echo "❌ $dir/SKILL.md: missing 'name:' field"
+              errors=$((errors+1))
+            fi
+            if ! grep -q '^description: ' "$f"; then
+              echo "❌ $dir/SKILL.md: missing 'description:' field"
+              errors=$((errors+1))
+            fi
+            echo "✅ $dir/SKILL.md"
+          done
+          exit $errors
+
+      - name: Validate skill.sh registry
+        run: |
+          errors=0
+          while IFS= read -r line; do
+            if [[ "$line" =~ \[([^\]]+)\]=\"skills\/([^\"]+)\/SKILL\.md\" ]]; then
+              name="${BASH_REMATCH[1]}"
+              path="${BASH_REMATCH[2]}"
+              if [ ! -f "skills/$path/SKILL.md" ]; then
+                echo "❌ skill.sh: $name points to skills/$path/SKILL.md but file not found"
+                errors=$((errors+1))
+              fi
+            fi
+          done < <(grep '\[.*\]="skills/' skill.sh)
+          exit $errors
+
+      - name: Validate README skill table
+        run: |
+          errors=0
+          for f in skills/*/SKILL.md; do
+            dir=$(basename $(dirname "$f"))
+            name=$(grep '^name: ' "$f" | sed 's/^name: //')
+            if ! grep -q "$name" README.md; then
+              echo "❌ README.md: missing install name '$name' from $dir"
+              errors=$((errors+1))
+            fi
+          done
+          exit $errors

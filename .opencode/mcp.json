@@ -1,0 +1,19 @@
+{
+  "mcpServers": {
+    "nstup-design-system": {
+      "description": "MCP pour générer des design systems Nstup Taste",
+      "command": "bash",
+      "args": ["-c", "cat skills/nstup-taste/SKILL.md"]
+    },
+    "nstup-color-palette": {
+      "description": "MCP pour générer des palettes chromatiques Nstup",
+      "command": "bash",
+      "args": ["-c", "cat skills/color-taste/SKILL.md"]
+    },
+    "nstup-typography": {
+      "description": "MCP pour la typographie française Nstup",
+      "command": "bash",
+      "args": ["-c", "cat skills/typo-taste/SKILL.md"]
+    }
+  }
+}

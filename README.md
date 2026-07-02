@@ -36,6 +36,7 @@ npx skills add https://github.com/mud-mos23/nstup-taste --skill "nstup-taste"
 | **soft** | `high-end-visual-design` | UI premium calme. Contraste doux, typo luxueuse. |
 | **redesign** | `redesign-existing-projects` | Audit + redesign de code existant. |
 | **output** | `full-output-enforcement` | Anti-troncature. Code complet, pas de placeholders. |
+| **stitch** | `stitch-design-taste` | Export DESIGN.md compatible Google Stitch. |
 
 ### Skills de génération d'images
 
@@ -44,6 +45,27 @@ npx skills add https://github.com/mud-mos23/nstup-taste --skill "nstup-taste"
 | **imagegen-web** | `imagegen-frontend-web` | Références design web (hero, landing, sections). |
 | **imagegen-mobile** | `imagegen-frontend-mobile` | Maquettes mobile iOS/Android. |
 | **brandkit** | `brandkit` | Planches d'identité visuelle (logo, palette, typo). |
+
+## Configuration opencode
+
+```bash
+# Copier les agents Nstup dans ton projet
+cp -r .opencode/ ~/ton-projet/.opencode/
+```
+
+Le projet inclut des agents opencode prêts à l'emploi :
+- **nstup-designer** — Applique les règles de design français
+- **nstup-redesigner** — Audit et redesign de code existant
+- **nstup-strict** — Anti-placeholders, anti-troncature
+
+## Validation
+
+```bash
+# Vérifier que tous les skills sont bien formés
+bash scripts/validate-skills.sh
+```
+
+Un workflow GitHub Actions valide automatiquement les skills à chaque push.
 
 ## Les 3 Cadrans
 
@@ -67,6 +89,13 @@ npx skills add https://github.com/mud-mos23/nstup-taste --skill "nstup-taste"
 - Espacement avec `clamp()`
 - Spring physics pour la motion
 - `max-width: 65ch` pour le texte
+
+## Exemples
+
+Des exemples concrets sont disponibles dans [`examples/`](examples/) :
+- `hero-nstup.md` — Hero section avec motion
+- `card-nstup.md` — Card éditoriale
+- `navigation-nstup.md` — Navigation responsive
 
 ## Feedback & Contributions
 

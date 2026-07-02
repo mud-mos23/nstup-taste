@@ -1,0 +1,16 @@
+{
+  "rules": [
+    {
+      "pattern": "**/*.{tsx,jsx}",
+      "instructions": "Appliquer les règles de design Nstup Taste : pas de templates SaaS, pas de dégradés violet/bleu, pas de 3-colonnes égales, pas de Inter ou Roboto."
+    },
+    {
+      "pattern": "**/*.{css,scss}",
+      "instructions": "Utiliser clamp() pour les espacements et tailles de police. Pas de px pour font-size. Tokens d'espacement Nstup."
+    },
+    {
+      "pattern": "**/*.{ts,js}",
+      "instructions": "Pas de window.addEventListener('scroll'), utiliser IntersectionObserver ou GSAP. Pas de setTimeout/setInterval pour les animations."
+    }
+  ]
+}
