@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" fill="none">
+  <rect width="200" height="200" rx="32" fill="#1d1b18"/>
+  <rect x="24" y="24" width="152" height="152" rx="24" fill="none" stroke="#9a7b4f" stroke-width="1.5" opacity=".3"/>
+  <text x="52" y="115" font-family="'DM Serif Display',Georgia,serif" font-size="52" fill="#f7f5f0" font-weight="400">N</text>
+  <text x="102" y="108" font-family="'Outfit',sans-serif" font-size="32" fill="#9a7b4f" font-weight="300" letter-spacing="-0.02">T</text>
+</svg>
