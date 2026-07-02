@@ -1,15 +1,23 @@
 ---
 name: imagegen-frontend-mobile
-description: Maquettes mobile premium. iOS/Android, écrans et flows, mockups téléphone, typographie lisible, ensembles cohérents.
+description: Génère des maquettes mobile premium. iOS/Android, écrans et flows. Mockups téléphone, typographie lisible, navigation intuitive.
 ---
 
 # ImageGen Mobile — Maquettes d'Apps
 
-Produis des maquettes d'écrans mobile. Format portrait, style cohérent.
+Génère des maquettes d'écrans mobiles. Format portrait avec mockup téléphone.
 
 ## Règles
-- Format portrait (9:16)
-- Mockup téléphone (bords arrondis, notch ou dynamic island)
-- Typographie lisible sur mobile
-- Navigation intuitive (tab bar, bottom nav)
+- Format 9:16 (portrait)
+- Mockup avec bords arrondis + notch/dynamic island
+- Typographie lisible sur écran mobile (minimum 16px pour le corps)
+- Navigation intuitive (tab bar, bottom nav, gesture hints)
 - Palette adaptée au mobile (contraste renforcé)
+- Pas de texte d'exemple générique
+
+## Types d'écrans
+- Onboarding / Splash
+- Home / Feed
+- Detail
+- Profile / Settings
+- Auth (login/signup)

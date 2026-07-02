@@ -1,22 +1,23 @@
 ---
 name: imagegen-frontend-web
-description: Références design web premium. Génère des images de site (hero, landing, sections) avec typo forte, espacement généreux, composition variée.
+description: Génère des images de référence design web premium. Hero, landing, sections. Typographie forte, espacement généreux, palettes sophistiquées.
 ---
 
-# ImageGen Web — Références Design Site
+# ImageGen Web — Références Design
 
-Produis des images de référence de site web. UNE image horizontale PAR section.
+Génère des images de référence de sites web. **Une image horizontale par section**, avec composition soignée.
 
 ## Règles
-- Format horizontal (16:9 ou 3:2)
-- Typographie forte et distinctive
+- Format 16:9 ou 3:2
+- Typographie distinctive et lisible
+- Palette sophistiquée (jamais de dégradé violet/bleu)
 - Espacement généreux
-- Palette sophistiquée
-- Pas de template SaaS
-- Composition variée entre les sections
+- Composition variée : une section ≠ la précédente
+- Contraste suffisant pour être lisible en miniature
+- Jamais de template SaaS
 
-## Sections à Générer
-1. Hero — une proposition forte, pas de "tagline + CTA" générique
-2. Contenu — mise en page éditoriale ou grille asymétrique
-3. Preuve sociale élégante
-4. Footer — minimal, typographique
+## Ordre des sections
+1. **Hero** — accroche forte, proposition unique
+2. **Contenu** — mise en page asymétrique ou éditoriale
+3. **Social proof** — élégante, pas de logo wall
+4. **Footer** — minimal, typographique
