@@ -1,0 +1,10 @@
+{
+  "name": "nstup-taste",
+  "description": "Skills de design frontend incluant iso, couleur, espace, motion, typo, minimaliste, brutaliste, soft, redesign",
+  "version": "1.0.0",
+  "author": { "name": "mud-mos23" },
+  "homepage": "https://github.com/mud-mos23/nstup-taste",
+  "repository": "https://github.com/mud-mos23/nstup-taste",
+  "license": "MIT",
+  "keywords": ["skills", "frontend", "design", "taste", "ui", "french"]
+}
